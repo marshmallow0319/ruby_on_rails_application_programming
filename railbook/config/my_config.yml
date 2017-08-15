@@ -1,0 +1,19 @@
+COMMON: &COMMON
+  author: "marshmallow"
+
+  logo:
+    source: "hoge"
+    width: 58
+    height: 179
+
+development:
+  hoge: "dev"
+  <<: *COMMON
+
+test:
+  hoge: "test"
+  <<: *COMMON
+
+production::
+  hoge: "pro"
+  <<: *COMMON
